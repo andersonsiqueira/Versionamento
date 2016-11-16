@@ -9,11 +9,14 @@ Parâmetros  : Nenhum, em termos de função
 
 # include <stdio.h>
 # include <math.h>
+# include <locale.h>
 
 int main() {
 	
 	float nMedia1Bim, nMedia2Bim, nMedia3Bim, nMedia4Bim, nMediaFinal;
 	char vNome[50];
+	
+	setlocale(LC_ALL,"Portuguese");
 	
 	// Informar os dados do aluno e médias
 	printf("Informe o nome do aluno     : ");
@@ -32,6 +35,12 @@ int main() {
 	scanf("%f",&nMedia4Bim);
 	
 	nMediaFinal = (nMedia1Bim+nMedia2Bim+nMedia3Bim+nMedia4Bim)/4;
+	
+	printf("\n\nO aluno %s foi está",vNome);
+	
+	if (nMediaFinal >= 6) {
+		printf("\nAprovado");
+	}
 	
 	return 0;
 	
