@@ -1,9 +1,8 @@
 /*******************************************************************
 
 Autor  		: Anderson Siqueira - aula 17 ESW
-Data   		: 01/11/2016
-Função 		: Calcular o IMC de uma pessoa a partir do peso e altura
-              do sujeito
+Data   		: 16/11/2016
+Função 		: Calcular a média dos alunos
 Parâmetros  : Nenhum, em termos de função 
  
 */
@@ -32,7 +31,7 @@ int main() {
 	printf("Informe a Média 4o Bimestre : ");
 	scanf("%f",&nMedia4Bim);
 	
-	nMediaFinal = nMedia1Bim+nMedia2Bim+nMedia3Bim+nMedia4Bim;
+	nMediaFinal = (nMedia1Bim+nMedia2Bim+nMedia3Bim+nMedia4Bim)/4;
 	
 	return 0;
 	
